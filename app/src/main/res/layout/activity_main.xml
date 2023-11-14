@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Quiz App"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/q1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Which is not a basic concept of object-oriented programming?" />
+
+        <RadioGroup
+            android:id="@+id/q1Radio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/abstraction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Abstraction"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/readability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Readability" />
+
+            <RadioButton
+                android:id="@+id/inheritance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Inheritance" />
+
+            <RadioButton
+                android:id="@+id/polymorphism"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Polymorphism" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/q2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Which of the following conditions are satisfied when x = 5?" />
+
+        <CheckBox
+            android:id="@+id/q2op1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="x == 5" />
+
+        <CheckBox
+            android:id="@+id/q2op2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="x in 1..5" />
+
+        <CheckBox
+            android:id="@+id/q2op3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="x is Int" />
+
+        <CheckBox
+            android:id="@+id/q2op4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="x % 5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/options"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/resetBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset" />
+    </LinearLayout>
+</LinearLayout>
